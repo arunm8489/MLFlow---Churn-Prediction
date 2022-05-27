@@ -1,0 +1,29 @@
+name: MLflow-app
+
+conda_env: conda.yaml
+
+entry_points:
+  train_pipeline:
+    command: "python src/main.py"
+
+  load_data:
+    parameters:
+      config: {type: str, default: "config.yaml"}
+    command: "python src/load_data.py --config={config}"
+
+  preprocess_data:
+    parameters:
+      config: {type: str, default: "config.yaml"}
+    command: "python src/preprocess_data.py --config={config}"
+  
+  tune_params:
+    parameters:
+      config: {type: str, default: "config.yaml"}
+    command: "python src/hyperparameter_tuning.py --config={config}"
+    
+
+  train_model:
+    parameters:
+      config: {type: str, default: "config.yaml"}
+    command: "python src/train.py --config={config}"
+  

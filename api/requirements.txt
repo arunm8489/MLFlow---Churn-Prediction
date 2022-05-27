@@ -1,0 +1,6 @@
+mlflow
+fastapi
+uvicorn
+pydantic
+pandas
+sklearn

@@ -1,0 +1,38 @@
+config:
+  artifacts:
+    cat_col_dict_path: artifacts/cat_col.bin
+    data_dir_path: artifacts/data
+    dir_path: artifacts
+    model_path: artifacts/model
+    std_scalar_path: artifacts/std_scalar.bin
+  data_path: ../data/data.csv
+  random_state: 42
+hyperparameter_tuning:
+  params:
+    criterion:
+    - entropy
+    - gini
+    max_depth:
+    - 2
+    - 5
+    - 10
+    - 15
+    min_samples_leaf:
+    - 2
+    - 3
+    - 5
+    min_samples_split:
+    - 2
+    - 3
+    - 5
+    n_estimators:
+    - 100
+    - 200
+    - 400
+    status: true
+params:
+  criterion: gini
+  max_depth: 10
+  min_samples_leaf: 3
+  min_samples_split: 5
+  n_estimators: 200

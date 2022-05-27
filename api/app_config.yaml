@@ -1,0 +1,6 @@
+config:
+   model_path: 'artifacts/model'
+   scalar_path: 'artifacts/std_scalar.bin'
+   cat_dict_path: 'artifacts/cat_col.bin'
+
+   
