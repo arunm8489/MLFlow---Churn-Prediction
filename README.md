@@ -68,7 +68,7 @@ mlflow run . -e train_pipeline
 
 ## Stage 3
 
-<img src="https://miro.medium.com/max/841/1*qYW_eNpc_1bir6MRdZtW2g.png">
+<img src="https://miro.medium.com/max/841/1*qYW_eNpc_1bir6MRdZtW2g.png" width=500 height=300>
 
 
 Once we have the best model after finetuning. We can mark the model as production and develop and endpoint for deployment. We have use fast api fpr api development.(You can find the code inside "api" folder)
