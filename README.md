@@ -42,10 +42,10 @@ pip install -r requirements.txt
 <p> Once it is done developers can start experiments. If one would like to view experiments via ui, use the following command </p>
 
 ```
-mlflow server --backend-store-uri mysql://admin:redhat123@database-mlflow.c4cohmxef4v5.us-east-1.rds.amazonaws.com/mlflowdb --default-artifact-root S3:/artifact-store-bucket001 --host 127.0.0.1 -p 5000
+mlflow server --backend-store-uri mysql://admin:redhat123@database-mlflow.c4cohmxef4v5.us-east-1.rds.amazonaws.com/mlflowdbb --default-artifact-root S3:/artifact-store-bucket001 --host 127.0.0.1 -p 5000
 
 ```
-Here admin is the mysql username and redhat123 is the password.The enpoint url is database-mlflow.c4cohmxef4v5.us-east-1.rds.amazonaws.com and db name is mlflowdb.
+Here admin is the mysql username and redhat123 is the password.The enpoint url is database-mlflow.c4cohmxef4v5.us-east-1.rds.amazonaws.com and db name is mlflowdbb.
 similarly artifact root is S3:/artifact-store-bucket001. Here we are using local tracking server(127.0.0.1) with port 5000.(You can find the code inside "Experiments" folder)
 
 
